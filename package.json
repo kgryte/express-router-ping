@@ -1,0 +1,59 @@
+{
+  "name": "express-router-ping",
+  "version": "0.0.0",
+  "description": "Express router which provides a ping endpoint.",
+  "author": {
+    "name": "Athan Reines",
+    "email": "kgryte@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Athan Reines",
+      "email": "kgryte@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "mocha",
+    "test-cov": "istanbul cover --no-default-excludes -x 'node_modules/**' -x '**/test/**' -x '**/tests/**' ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+    "codecov": "istanbul cover --no-default-excludes -x 'node_modules/**' -x '**/test/**' -x '**/tests/**' ./node_modules/.bin/_mocha --dir ./reports/codecov/coverage --report lcovonly -- -R spec && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kgryte/express-router-ping.git"
+  },
+  "keywords": [
+    "express",
+    "router",
+    "application",
+    "app",
+    "mount",
+    "routes",
+    "ping",
+    "pong",
+    "health",
+    "check",
+    "endpoint",
+    "middleware",
+    "mw",
+    "get",
+    "rest"
+  ],
+  "bugs": {
+    "url": "https://github.com/kgryte/express-router-ping/issues"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "@kgryte/noop": "^1.0.0",
+    "chai": "3.x.x",
+    "codecov.io": "^0.1.5",
+    "istanbul": "^0.3.0",
+    "jshint": "2.x.x",
+    "jshint-stylish": "2.x.x",
+    "mocha": "2.x.x",
+    "request": "^2.61.0"
+  },
+  "license": "MIT"
+}
