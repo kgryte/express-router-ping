@@ -1,6 +1,6 @@
 {
   "name": "express-router-ping",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Express router which provides a ping endpoint.",
   "author": {
     "name": "Athan Reines",
