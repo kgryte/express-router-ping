@@ -7,7 +7,6 @@ var mpath = './../lib/pong.js';
 // MODULES //
 
 var chai = require( 'chai' ),
-	noop = require( '@kgryte/noop' ),
 	pong = require( mpath );
 
 
@@ -48,12 +47,12 @@ describe( 'pong', function tests() {
 	});
 
 	it( 'should return a 200 status', function test() {
-		pong( request, response, noop );
+		pong( request, response );
 		assert.strictEqual( response._status, 200 );
 	});
 
 	it( 'should return a response body which is a string reading `pong`', function test() {
-		pong( request, response, noop );
+		pong( request, response );
 		assert.strictEqual( response._body, 'pong' );
 	});
 
