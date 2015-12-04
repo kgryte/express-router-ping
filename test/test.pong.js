@@ -57,12 +57,4 @@ describe( 'pong', function tests() {
 		assert.strictEqual( response._body, 'pong' );
 	});
 
-	it( 'should invoke a callback after sending the response', function test( done ) {
-		pong( request, response, next );
-		function next() {
-			assert.ok( true );
-			done();
-		}
-	});
-
 });
